@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Estação Barbearia
 
-## Getting Started
+Landing page moderna e elegante para uma barbearia, desenvolvida com Next.js e focada em conversão para agendamento via WhatsApp.
 
-First, run the development server:
+## Visão geral
+
+Este projeto é uma interface de apresentação para a barbearia Estação, com foco em:
+
+- destacar os serviços oferecidos;
+- transmitir a identidade do ambiente e do atendimento;
+- incentivar agendamentos e contato direto;
+- apresentar a marca em um visual premium e responsivo.
+
+## Tecnologias utilizadas
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
+- ESLint
+
+## Estrutura do projeto
+
+```bash
+frontend/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+├── .gitignore
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── tsconfig.json
+├── README.md
+└── package-lock.json
+```
+
+## Funcionalidades
+
+- Hero section com forte apelo visual
+- Navegação por seções: sobre, serviços, ambiente e contato
+- Listagem de serviços com preços de referência
+- Galeria de imagens inspirada em barbearias tradicionais
+- Botões de CTA para agendamento pelo WhatsApp
+- Layout responsivo para desktop e mobile
+- Design com estética premium e minimalista
+
+## Como executar localmente
+
+1. Abra o terminal na pasta do projeto.
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Acesse no navegador:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts disponíveis
 
-## Learn More
+```bash
+npm run dev
+```
+Inicia a aplicação em modo de desenvolvimento.
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
+Gera a build de produção.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
+Executa a aplicação em modo de produção.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run lint
+```
+Executa a checagem de lint do projeto.
 
-## Deploy on Vercel
+## Personalização
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Para adaptar a página à sua barbearia, você pode alterar:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- textos e slogan principal em `app/page.tsx`;
+- dados de endereço e horários em `app/page.tsx`;
+- links de WhatsApp e redes sociais;
+- cores, tipografia e estilos em `app/globals.css`.
+
+## Observações
+
+Este projeto foi desenvolvido como uma landing page front-end e pode ser evoluído facilmente para incluir:
+
+- agendamento integrado;
+- painel administrativo;
+- catálogo de serviços e produtos;
+- autenticação para clientes ou funcionários;
+- backend e banco de dados.
+
+## Autor
+
+Projeto desenvolvido para a marca Estação Barbearia.
